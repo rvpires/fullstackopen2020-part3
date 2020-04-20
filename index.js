@@ -12,6 +12,7 @@ morgan.token('content', function (req, res) {
 
 app.use(morgan(':method :url :status :response-time :content'))
 app.use(cors())
+app.use(express.static('build'))
 
 
 
